@@ -1,0 +1,26 @@
+body{
+font-family: Arial;
+font-size:14pt;
+color: rgb(0,51,102);
+}
+
+table, ul, ol{
+font-size:90%;
+}
+
+a:link{
+color:skyblue;
+}
+
+a:visited{
+color:black;
+}
+
+a:hover{
+color:green;
+}
+
+a:active{
+color:white;
+background:gray;
+}
