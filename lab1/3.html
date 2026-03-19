@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function thanks(){
+alert("Спасибо за участие в опросе!");
+}
+
+function choice(){
+alert("Вы сделали выбор");
+}
+
+</script>
+
+</head>
+
+<body onunload="alert('Уже уходите?')">
+
+<h2>Опрос</h2>
+
+<form>
+
+Введите ФИО:<br>
+<input type="text" name="fio"><br><br>
+
+Что вам больше нравится?<br>
+
+<input type="checkbox" onclick="choice()">Мороженое<br>
+<input type="checkbox" onclick="choice()">Шоколад<br><br>
+
+<input type="button" value="Отправить" onclick="thanks()">
+
+</form>
+
+<br><br>
+
+<a href="#" onmouseover="alert('Вы навели курсор на ссылку')">
+Наведи курсор на ссылку
+</a>
+
+</body>
+</html>

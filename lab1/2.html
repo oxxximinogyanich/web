@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function f(obj){
+
+var s = obj.t.value;
+var x;
+
+switch(s){
+
+case "1":
+x="100";
+break;
+
+case "3":
+x="200";
+break;
+
+case "6":
+x="300";
+break;
+
+case "12":
+x="400";
+break;
+
+default:
+x="недопустимое значение"
+
+}
+
+obj.t1.value = x;
+
+}
+
+function ff(obj){
+
+obj.t.value="";
+obj.t1.value="";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Вычисление стоимости подписки</h1>
+
+Введите период подписки (1,3,6,12)<br>
+
+<form name="f1">
+
+<input type="text" name="t"><br><br>
+
+<input type="button" value="Рассчитать" onclick="f(f1)">
+
+<input type="button" value="Отменить" onclick="ff(f1)">
+
+<br><br>
+
+Стоимость подписки:<br>
+
+<input type="text" name="t1">
+
+</form>
+
+</body>
+</html>
