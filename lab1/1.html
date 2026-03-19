@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Площадь фигуры</title>
+
+<script>
+
+function edition(obj){
+
+var a = obj.edit1.value;
+var s;
+
+if(obj.elements[0].checked){
+s = 3.14 * a * a;
+}
+else{
+s = a * a;
+}
+
+obj.edit2.value = s;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="form1">
+
+Выберите форму:<br>
+
+<input type="radio" name="tip1" checked>Круг<br>
+<input type="radio" name="tip1">Квадрат<br>
+
+Введите размер (радиус круга или сторону квадрата):
+
+<input type="text" name="edit1"><br><br>
+
+<input type="button" value="Площадь" onclick="edition(form1)"><br><br>
+
+Площадь:<br>
+
+<input type="text" name="edit2"><br><br>
+
+<input type="reset" value="Отмена">
+
+</form>
+
+</body>
+</html>
