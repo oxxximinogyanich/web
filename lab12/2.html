@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор оттенков цвета</title>
+</head>
+<body>
+
+<h2>Подбор оттенков цвета</h2>
+
+<form method="GET" action="cgi-bin/colors.pl">
+
+    Введите код цвета: 
+    <input type="text" name="code" value="FF0000"><br><br>
+
+    Выберите цвет:
+    <select name="color">
+        <option value="red">Красный</option>
+        <option value="yellow">Желтый</option>
+        <option value="brown">Каштановый</option>
+        <option value="green">Зеленый</option>
+        <option value="blue">Синий</option>
+    </select><br><br>
+
+    <input type="submit" value="Выполнить">
+
+</form>
+
+</body>
+</html>
